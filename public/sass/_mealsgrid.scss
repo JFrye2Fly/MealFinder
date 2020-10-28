@@ -1,0 +1,127 @@
+
+    .searchBar{
+        padding: .5rem 2rem;
+        background: rgba(3,65,89, .66);
+       
+        .headerContainer{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5%;
+
+            #salmonContainer{
+                border-radius: 50px;
+                img{
+                    height: 100px;
+                    width: 100px;
+                    border-radius: 50%;
+                }
+            }
+
+            .exceptImage{
+                display: flex;
+            }
+
+            h1{
+                color: #fff;
+                font-size: 1.4rem;
+            }
+
+            #searchInput{
+                outline: none;
+                padding: .9rem;
+                font-size: 1.2rem;
+                border-radius: 2rem;
+                background: $yellow;
+                border: .7px solid $tan;
+                width: 30rem;
+                margin-left: 5%;
+            }
+        }
+    }
+
+    #darkBlueContainer{
+        background: $darkestblue;
+        flex-grow: 1;
+    }
+
+.mealsGridContainer{
+    width: 80%;
+    margin: 0 auto 0;
+    padding: 2.2rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 28rem));
+    justify-items: center;
+    grid-row-gap: 2rem;
+
+    .mealItem{
+     width: 90%;
+     height: 15rem;
+     border: 1px solid #fff;
+     background: white;
+     display: flex;
+     align-items: center;
+    -webkit-box-shadow: 4px 7px 10px 0px rgba(0,0,0,0.75);
+     -moz-box-shadow: 4px 7px 10px 0px rgba(0,0,0,0.75);
+     box-shadow: 4px 7px 10px 0px rgba(0,0,0,0.75);
+
+     .mealItemInner{
+         width: 100%;
+         height: 100%;
+         margin: 0 auto;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         position: relative;
+
+         img{
+             height: 100%;
+             width: 100%;
+             z-index: 1;
+         }
+
+         .onHover{
+             opacity: 0;
+             background: #fff;
+             position: absolute;
+             top: 0;
+             right: 0;
+             bottom: 0;
+             left: 0;
+             z-index: 2;
+             transition: opacity .4s ease-in-out;
+             padding: 5%;
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             align-items: center;
+
+             &:hover{
+                 opacity: .87;
+                 transform: scale(1.05);
+                 cursor: pointer;
+             }
+             
+                p{
+                    font-size: 1.25rem;
+                    color: #000;
+                }
+
+             button{
+                margin-top: .7rem;
+                height: 3rem;
+                background: $pink;
+                outline: none;
+                border: none;
+                border-radius: .4rem;
+                color: #fff;
+                font-size: 1.4rem;
+                cursor: pointer;
+                opacity: 100%;
+                z-index: 100;
+             }
+             
+         }
+     }
+    }
+}

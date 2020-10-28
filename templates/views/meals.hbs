@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealFinder</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+        {{>header}}
+        <div class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+
+        <p id="message-one" style="display: none;"></p>
+        <p id="message-two" style="display: none;"></p>
+        
+        <div id="darkBlueContainer">
+            <div class="mealsGridContainer"></div>
+        </div>
+
+        <div id="mealDetails">
+            
+        </div>
+<script src="/js/index.js"></script>
+</body>
+ {{>footer}}
+</html>
